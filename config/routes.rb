@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  root "places#index"
+  
+  # root 'static_pages#home'
+
+  root 'places#index'
+
   devise_for :users
 
   resources :places
